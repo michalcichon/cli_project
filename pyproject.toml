@@ -1,3 +1,7 @@
+[tool.uv]
+# Use public PyPI so the project works without Artifactory credentials
+index-url = "https://pypi.org/simple/"
+
 [project]
 name = "app"
 version = "0.1.0"
