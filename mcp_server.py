@@ -55,9 +55,7 @@ def get_document(doc_id: str) -> str:
 def format_document(doc_id: str) -> list[base.Message]:
     prompt = f"""
     Format the following document in markdown format:
-    <document>
-    {docs[doc_id]}
-    </document>
+    <document_id>{doc_id}</document_id>
     """
     return [base.UserMessage(content=prompt)]
 
